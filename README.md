@@ -1,2 +1,0 @@
-# osmdev
-open source mano 
