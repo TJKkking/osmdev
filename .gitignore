@@ -1,0 +1,10 @@
+packages
+repository
+*.tar.gz
+install_osm.sh
+nsconfig
+*.gpg
+
+# temp files
+toucharm
+native_charm_vnf

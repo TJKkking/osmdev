@@ -1,0 +1,3 @@
+643827ad4e64d44136459dc50c961e52	tjkdev_ns/tjkdev_nsd.yaml
+a74c9022ea3c78883b3b88a7dd8254d5	tjkdev_ns/README.md
+bc681c5a4c3cdc09c013df2d2239f3d2	tjkdev_ns/Files/icons/osm.png

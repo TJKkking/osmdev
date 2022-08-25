@@ -1,0 +1,31 @@
+nsd:
+  nsd:
+  - id: tjkdev_charm_nsd
+    name: tjkdev_charm_nsd
+    designer: taojk
+    description: NS with 1 VNFs with cloudinit connected by datanet and mgmtnet VLs
+    version: '1.0'
+
+    vnfd-id:
+    - tjkdev_charm_vnfd
+
+    df:
+    - id: default-df
+      vnf-profile:
+      - id: vnf1
+        vnfd-id: tjkdev_charm_vnfd
+        virtual-link-connectivity:
+        - virtual-link-profile-id: tjkdev_charm_nsd_vld0
+          constituent-cpd-id:
+          - constituent-base-element-id: vnf1
+            constituent-cpd-id: vnf-cp0-ext
+        - virtual-link-profile-id: tjkdev_charm_nsd_vld1
+          constituent-cpd-id:
+          - constituent-base-element-id: vnf1
+            constituent-cpd-id: vnf-cp1-ext
+
+    virtual-link-desc:
+    - id: tjkdev_charm_nsd_vld0
+      mgmt-network: true
+      vim-network-name: public
+    - id: tjkdev_charm_nsd_vld1

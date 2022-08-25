@@ -1,0 +1,4 @@
+dd357e619bcb1f3c916e1a0cb72ff1d5	tjkdev_basic_vnf/tjkdev_basic_vnfd.yaml
+11b7c5bdc7a5f52db373521466c6607f	tjkdev_basic_vnf/README.md
+bc681c5a4c3cdc09c013df2d2239f3d2	tjkdev_basic_vnf/icons/osm.png
+e248835623f4d404fa861d3a9c71d614	tjkdev_basic_vnf/cloud_init/cloud-config.txt
