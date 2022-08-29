@@ -1,0 +1,22 @@
+{
+vld:
+[
+{
+name: tjkdev_nsd_vld0,
+vim-network-name: public
+}
+]
+}
+
+{
+vld:
+[
+{
+name: mgmtnet,
+vim-network-name: public
+}
+]
+}
+
+
+https://discuss.kubernetes.io/t/the-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/1464/16
