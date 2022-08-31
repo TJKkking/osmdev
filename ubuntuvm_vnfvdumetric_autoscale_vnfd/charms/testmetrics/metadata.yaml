@@ -1,0 +1,15 @@
+"name": "testmetrics"
+"summary": "extends the ubuntuvnf charm with sayhello primitive to support basic metrics"
+"maintainer": "Gianpietro Lavado <glavado@whitestack.com>"
+"description": |
+  Extends the ubuntuvnf charm with sayhello primitive to support basic metrics
+"tags":
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - "misc"
+  - "osm"
+  - "vnf"
+"series":
+- "xenial"
+- "trusty"
+"subordinate": !!bool "false"

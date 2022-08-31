@@ -1,0 +1,1562 @@
+{
+  "layers": [
+    "layer:options",
+    "layer:basic",
+    "layer:sshproxy",
+    "layer:vnfproxy",
+    "testmetrics",
+    "build"
+  ],
+  "signatures": {
+    ".build.manifest": [
+      "build",
+      "dynamic",
+      "unchecked"
+    ],
+    ".gitignore": [
+      "layer:sshproxy",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "LICENSE": [
+      "layer:basic",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "Makefile": [
+      "layer:basic",
+      "static",
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ],
+    "README.ex": [
+      "testmetrics",
+      "static",
+      "eb25333fb6ee2abc2d5dde329dfd6b4b2a6dd5516094e75354fb6cd84010afad"
+    ],
+    "README.md": [
+      "layer:vnfproxy",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "actions.yaml": [
+      "testmetrics",
+      "dynamic",
+      "19d408a7cc02f1431cf83927cf8f576e56916d804bd2ee41cc7e2a0c855d6d3b"
+    ],
+    "actions/generate-ssh-key": [
+      "layer:sshproxy",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "actions/get-ssh-public-key": [
+      "layer:sshproxy",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "actions/reboot": [
+      "layer:vnfproxy",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "actions/restart": [
+      "layer:vnfproxy",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "actions/run": [
+      "layer:sshproxy",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "actions/say-hello": [
+      "testmetrics",
+      "static",
+      "bca164b7750ea13c9da05d8b5114fa071bbf7e2e2d2bbe947cc941af3d28606a"
+    ],
+    "actions/start": [
+      "layer:vnfproxy",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "actions/stop": [
+      "layer:vnfproxy",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "actions/upgrade": [
+      "layer:vnfproxy",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "actions/verify-ssh-credentials": [
+      "layer:sshproxy",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "bin/charm-env": [
+      "layer:basic",
+      "static",
+      "09126ccb5849fa7c821a1fd0940ab794f32b5bde22956d043619596a34c974e4"
+    ],
+    "bin/layer_option": [
+      "layer:options",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "config.yaml": [
+      "testmetrics",
+      "dynamic",
+      "38d42471f3d0fcaca02aa2f97566542437c7e58fb1b65551afb93598eba19d0d"
+    ],
+    "copyright": [
+      "layer:basic",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "copyright.layer-options": [
+      "layer:options",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "deps/layer/basic/.gitignore": [
+      "testmetrics",
+      "static",
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ],
+    "deps/layer/basic/LICENSE": [
+      "testmetrics",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "deps/layer/basic/Makefile": [
+      "testmetrics",
+      "static",
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ],
+    "deps/layer/basic/README.md": [
+      "testmetrics",
+      "static",
+      "92dcf485a5356407aa1c92da864dfc14c14bb6b9b15879fdcf75dd7f7a29c0bf"
+    ],
+    "deps/layer/basic/bin/charm-env": [
+      "testmetrics",
+      "static",
+      "09126ccb5849fa7c821a1fd0940ab794f32b5bde22956d043619596a34c974e4"
+    ],
+    "deps/layer/basic/copyright": [
+      "testmetrics",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "deps/layer/basic/hooks/hook.template": [
+      "testmetrics",
+      "static",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "deps/layer/basic/layer.yaml": [
+      "testmetrics",
+      "static",
+      "0481ccd1ed9c9fc52d029ee36008f86460d8b66da04f37beb42e2de1ffd121a1"
+    ],
+    "deps/layer/basic/lib/charms/layer/__init__.py": [
+      "testmetrics",
+      "static",
+      "dfe0d26c6bf409767de6e2546bc648f150e1b396243619bad3aa0553ab7e0e6f"
+    ],
+    "deps/layer/basic/lib/charms/layer/basic.py": [
+      "testmetrics",
+      "static",
+      "ec4e6b7f9d6892ab74b3541337d1dc1d244ffb2155771841cc9480839f03d4c0"
+    ],
+    "deps/layer/basic/lib/charms/layer/execd.py": [
+      "testmetrics",
+      "static",
+      "fda8bd491032db1db8ddaf4e99e7cc878c6fb5432efe1f91cadb5b34765d076d"
+    ],
+    "deps/layer/basic/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    ],
+    "deps/layer/basic/reactive/__init__.py": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/basic/requirements.txt": [
+      "testmetrics",
+      "static",
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ],
+    "deps/layer/basic/tox.ini": [
+      "testmetrics",
+      "static",
+      "0350315801b7fc2bd38a1f43a7e31d40d5a3bcfe5f6c8dac2bdf293833bc6d21"
+    ],
+    "deps/layer/basic/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "cc214ffedbdbaf3784165f83848c37ae0a90a0b8f1561efa710de9a8435d43d3"
+    ],
+    "deps/layer/layer-basic/.gitignore": [
+      "testmetrics",
+      "static",
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ],
+    "deps/layer/layer-basic/LICENSE": [
+      "testmetrics",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "deps/layer/layer-basic/Makefile": [
+      "testmetrics",
+      "static",
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ],
+    "deps/layer/layer-basic/README.md": [
+      "testmetrics",
+      "static",
+      "92dcf485a5356407aa1c92da864dfc14c14bb6b9b15879fdcf75dd7f7a29c0bf"
+    ],
+    "deps/layer/layer-basic/bin/charm-env": [
+      "testmetrics",
+      "static",
+      "09126ccb5849fa7c821a1fd0940ab794f32b5bde22956d043619596a34c974e4"
+    ],
+    "deps/layer/layer-basic/copyright": [
+      "testmetrics",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "deps/layer/layer-basic/hooks/hook.template": [
+      "testmetrics",
+      "static",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "deps/layer/layer-basic/layer.yaml": [
+      "testmetrics",
+      "static",
+      "0481ccd1ed9c9fc52d029ee36008f86460d8b66da04f37beb42e2de1ffd121a1"
+    ],
+    "deps/layer/layer-basic/lib/charms/layer/__init__.py": [
+      "testmetrics",
+      "static",
+      "dfe0d26c6bf409767de6e2546bc648f150e1b396243619bad3aa0553ab7e0e6f"
+    ],
+    "deps/layer/layer-basic/lib/charms/layer/basic.py": [
+      "testmetrics",
+      "static",
+      "b1999883f669aa0d7e329cd7757ee2b14c7bcabdcf3c781272e9be79ef36255f"
+    ],
+    "deps/layer/layer-basic/lib/charms/layer/execd.py": [
+      "testmetrics",
+      "static",
+      "fda8bd491032db1db8ddaf4e99e7cc878c6fb5432efe1f91cadb5b34765d076d"
+    ],
+    "deps/layer/layer-basic/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    ],
+    "deps/layer/layer-basic/reactive/__init__.py": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/layer-basic/requirements.txt": [
+      "testmetrics",
+      "static",
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ],
+    "deps/layer/layer-basic/tox.ini": [
+      "testmetrics",
+      "static",
+      "0350315801b7fc2bd38a1f43a7e31d40d5a3bcfe5f6c8dac2bdf293833bc6d21"
+    ],
+    "deps/layer/layer-basic/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "cc214ffedbdbaf3784165f83848c37ae0a90a0b8f1561efa710de9a8435d43d3"
+    ],
+    "deps/layer/layer-metrics/README.md": [
+      "testmetrics",
+      "static",
+      "6643c82ed9ebb390794ed0e0f6a509d0922c17ca092b1763896c2c59d98799fb"
+    ],
+    "deps/layer/layer-metrics/copyright": [
+      "testmetrics",
+      "static",
+      "08509dcbade4c20761ba4382ef23c831744dbab1d4a8dd94a1c2b4d4e913334c"
+    ],
+    "deps/layer/layer-metrics/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "28625f52430ff52fed68a51838b3b794344ac4357b4f49346651db867d36a451"
+    ],
+    "deps/layer/layer-options/LICENSE": [
+      "testmetrics",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "deps/layer/layer-options/README.md": [
+      "testmetrics",
+      "static",
+      "c1c2a478ac6301b27629224604aafd1f40d4077827bdc519444b7886268b5f09"
+    ],
+    "deps/layer/layer-options/bin/layer_option": [
+      "testmetrics",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "deps/layer/layer-options/copyright": [
+      "testmetrics",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "deps/layer/layer-options/lib/charms/layer/options.py": [
+      "testmetrics",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "deps/layer/layer-sshproxy/.gitignore": [
+      "testmetrics",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "deps/layer/layer-sshproxy/README.md": [
+      "testmetrics",
+      "static",
+      "50e820ef48f60ca8ca1b327dba43d202a1f9ebaaaf31da7f64dc43d6bd17da7d"
+    ],
+    "deps/layer/layer-sshproxy/actions.yaml": [
+      "testmetrics",
+      "static",
+      "ebbc2dc3462c8c8ed70f4eee6508121d9b7130c25ab18b63ca6244a4682bb889"
+    ],
+    "deps/layer/layer-sshproxy/actions/generate-ssh-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/layer-sshproxy/actions/get-ssh-public-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/layer-sshproxy/actions/run": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/layer-sshproxy/actions/verify-ssh-credentials": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/layer-sshproxy/config.yaml": [
+      "testmetrics",
+      "static",
+      "b0b45b70571a4de452b5103a8991b2e78c599b2d7e83dcb778f26264874a5d09"
+    ],
+    "deps/layer/layer-sshproxy/layer.yaml": [
+      "testmetrics",
+      "static",
+      "22c5dedf48d97e3a8303679dafac3e3dc2f9d2ed310c7c99ed964ea19c7323ac"
+    ],
+    "deps/layer/layer-sshproxy/lib/charms/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "deps/layer/layer-sshproxy/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "b21414f983900ee64c0618a0400e6606a4fe9e0d35f8aea15c19fff673398b19"
+    ],
+    "deps/layer/layer-sshproxy/reactive/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "deps/layer/layer-sshproxy/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/layer-sshproxy/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "2ba75d812122f23e933197b26fed3d5673986a2ce0b6eeab916776fe0e1ff911"
+    ],
+    "deps/layer/layer-sshproxy/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "625a3d927a9e46bbea27034a7daa0cf059779659926b7de02c8c6ec3b61ed68d"
+    ],
+    "deps/layer/metrics/README.md": [
+      "testmetrics",
+      "static",
+      "6643c82ed9ebb390794ed0e0f6a509d0922c17ca092b1763896c2c59d98799fb"
+    ],
+    "deps/layer/metrics/copyright": [
+      "testmetrics",
+      "static",
+      "08509dcbade4c20761ba4382ef23c831744dbab1d4a8dd94a1c2b4d4e913334c"
+    ],
+    "deps/layer/metrics/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "28625f52430ff52fed68a51838b3b794344ac4357b4f49346651db867d36a451"
+    ],
+    "deps/layer/options/LICENSE": [
+      "testmetrics",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "deps/layer/options/README.md": [
+      "testmetrics",
+      "static",
+      "c1c2a478ac6301b27629224604aafd1f40d4077827bdc519444b7886268b5f09"
+    ],
+    "deps/layer/options/bin/layer_option": [
+      "testmetrics",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "deps/layer/options/copyright": [
+      "testmetrics",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "deps/layer/options/lib/charms/layer/options.py": [
+      "testmetrics",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "deps/layer/sshproxy/.gitignore": [
+      "testmetrics",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "deps/layer/sshproxy/README.md": [
+      "testmetrics",
+      "static",
+      "50e820ef48f60ca8ca1b327dba43d202a1f9ebaaaf31da7f64dc43d6bd17da7d"
+    ],
+    "deps/layer/sshproxy/actions.yaml": [
+      "testmetrics",
+      "static",
+      "ebbc2dc3462c8c8ed70f4eee6508121d9b7130c25ab18b63ca6244a4682bb889"
+    ],
+    "deps/layer/sshproxy/actions/generate-ssh-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/sshproxy/actions/get-ssh-public-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/sshproxy/actions/run": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/sshproxy/actions/verify-ssh-credentials": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/sshproxy/config.yaml": [
+      "testmetrics",
+      "static",
+      "b0b45b70571a4de452b5103a8991b2e78c599b2d7e83dcb778f26264874a5d09"
+    ],
+    "deps/layer/sshproxy/layer.yaml": [
+      "testmetrics",
+      "static",
+      "22c5dedf48d97e3a8303679dafac3e3dc2f9d2ed310c7c99ed964ea19c7323ac"
+    ],
+    "deps/layer/sshproxy/lib/charms/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "deps/layer/sshproxy/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "b21414f983900ee64c0618a0400e6606a4fe9e0d35f8aea15c19fff673398b19"
+    ],
+    "deps/layer/sshproxy/reactive/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "deps/layer/sshproxy/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/sshproxy/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "2ba75d812122f23e933197b26fed3d5673986a2ce0b6eeab916776fe0e1ff911"
+    ],
+    "deps/layer/sshproxy/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "625a3d927a9e46bbea27034a7daa0cf059779659926b7de02c8c6ec3b61ed68d"
+    ],
+    "deps/layer/tmp01w_re3f/.gitignore": [
+      "testmetrics",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "deps/layer/tmp01w_re3f/README.md": [
+      "testmetrics",
+      "static",
+      "50e820ef48f60ca8ca1b327dba43d202a1f9ebaaaf31da7f64dc43d6bd17da7d"
+    ],
+    "deps/layer/tmp01w_re3f/actions.yaml": [
+      "testmetrics",
+      "static",
+      "ebbc2dc3462c8c8ed70f4eee6508121d9b7130c25ab18b63ca6244a4682bb889"
+    ],
+    "deps/layer/tmp01w_re3f/actions/generate-ssh-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmp01w_re3f/actions/get-ssh-public-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmp01w_re3f/actions/run": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmp01w_re3f/actions/verify-ssh-credentials": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmp01w_re3f/config.yaml": [
+      "testmetrics",
+      "static",
+      "b0b45b70571a4de452b5103a8991b2e78c599b2d7e83dcb778f26264874a5d09"
+    ],
+    "deps/layer/tmp01w_re3f/layer.yaml": [
+      "testmetrics",
+      "static",
+      "22c5dedf48d97e3a8303679dafac3e3dc2f9d2ed310c7c99ed964ea19c7323ac"
+    ],
+    "deps/layer/tmp01w_re3f/lib/charms/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "deps/layer/tmp01w_re3f/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "b21414f983900ee64c0618a0400e6606a4fe9e0d35f8aea15c19fff673398b19"
+    ],
+    "deps/layer/tmp01w_re3f/reactive/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "deps/layer/tmp01w_re3f/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmp01w_re3f/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "2ba75d812122f23e933197b26fed3d5673986a2ce0b6eeab916776fe0e1ff911"
+    ],
+    "deps/layer/tmp01w_re3f/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "625a3d927a9e46bbea27034a7daa0cf059779659926b7de02c8c6ec3b61ed68d"
+    ],
+    "deps/layer/tmpDIxwLZ/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpDIxwLZ/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpDIxwLZ/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpDIxwLZ/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpDIxwLZ/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpDIxwLZ/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpDIxwLZ/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpDIxwLZ/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpDIxwLZ/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpDIxwLZ/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpDIxwLZ/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpDIxwLZ/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpDIxwLZ/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpDIxwLZ/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpDIxwLZ/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpcUXF5j/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpcUXF5j/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpcUXF5j/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcUXF5j/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcUXF5j/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcUXF5j/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcUXF5j/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcUXF5j/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpcUXF5j/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpcUXF5j/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpcUXF5j/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpcUXF5j/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpcUXF5j/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpcUXF5j/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpcUXF5j/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpcv571wqd/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpcv571wqd/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpcv571wqd/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcv571wqd/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcv571wqd/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcv571wqd/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcv571wqd/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpcv571wqd/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpcv571wqd/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpcv571wqd/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpcv571wqd/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpcv571wqd/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpcv571wqd/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpcv571wqd/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpcv571wqd/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpdL76WH/.gitignore": [
+      "testmetrics",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "deps/layer/tmpdL76WH/README.md": [
+      "testmetrics",
+      "static",
+      "50e820ef48f60ca8ca1b327dba43d202a1f9ebaaaf31da7f64dc43d6bd17da7d"
+    ],
+    "deps/layer/tmpdL76WH/actions.yaml": [
+      "testmetrics",
+      "static",
+      "ebbc2dc3462c8c8ed70f4eee6508121d9b7130c25ab18b63ca6244a4682bb889"
+    ],
+    "deps/layer/tmpdL76WH/actions/generate-ssh-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpdL76WH/actions/get-ssh-public-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpdL76WH/actions/run": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpdL76WH/actions/verify-ssh-credentials": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpdL76WH/config.yaml": [
+      "testmetrics",
+      "static",
+      "b0b45b70571a4de452b5103a8991b2e78c599b2d7e83dcb778f26264874a5d09"
+    ],
+    "deps/layer/tmpdL76WH/layer.yaml": [
+      "testmetrics",
+      "static",
+      "22c5dedf48d97e3a8303679dafac3e3dc2f9d2ed310c7c99ed964ea19c7323ac"
+    ],
+    "deps/layer/tmpdL76WH/lib/charms/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "deps/layer/tmpdL76WH/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "b21414f983900ee64c0618a0400e6606a4fe9e0d35f8aea15c19fff673398b19"
+    ],
+    "deps/layer/tmpdL76WH/reactive/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "deps/layer/tmpdL76WH/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpdL76WH/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "2ba75d812122f23e933197b26fed3d5673986a2ce0b6eeab916776fe0e1ff911"
+    ],
+    "deps/layer/tmpdL76WH/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "625a3d927a9e46bbea27034a7daa0cf059779659926b7de02c8c6ec3b61ed68d"
+    ],
+    "deps/layer/tmpfilvs9mz/.gitignore": [
+      "testmetrics",
+      "static",
+      "17526a7f7312e7eefb932d1c514b7bc8425fab5bd1ade149e106ecf8bff67358"
+    ],
+    "deps/layer/tmpfilvs9mz/README.md": [
+      "testmetrics",
+      "static",
+      "50e820ef48f60ca8ca1b327dba43d202a1f9ebaaaf31da7f64dc43d6bd17da7d"
+    ],
+    "deps/layer/tmpfilvs9mz/actions.yaml": [
+      "testmetrics",
+      "static",
+      "ebbc2dc3462c8c8ed70f4eee6508121d9b7130c25ab18b63ca6244a4682bb889"
+    ],
+    "deps/layer/tmpfilvs9mz/actions/generate-ssh-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpfilvs9mz/actions/get-ssh-public-key": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpfilvs9mz/actions/run": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpfilvs9mz/actions/verify-ssh-credentials": [
+      "testmetrics",
+      "static",
+      "46bf4be02078a0f5ac60ab81609372a8f9943885b7a4999ce5332ea2f4857036"
+    ],
+    "deps/layer/tmpfilvs9mz/config.yaml": [
+      "testmetrics",
+      "static",
+      "b0b45b70571a4de452b5103a8991b2e78c599b2d7e83dcb778f26264874a5d09"
+    ],
+    "deps/layer/tmpfilvs9mz/layer.yaml": [
+      "testmetrics",
+      "static",
+      "22c5dedf48d97e3a8303679dafac3e3dc2f9d2ed310c7c99ed964ea19c7323ac"
+    ],
+    "deps/layer/tmpfilvs9mz/lib/charms/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "deps/layer/tmpfilvs9mz/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "b21414f983900ee64c0618a0400e6606a4fe9e0d35f8aea15c19fff673398b19"
+    ],
+    "deps/layer/tmpfilvs9mz/reactive/sshproxy.py": [
+      "testmetrics",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "deps/layer/tmpfilvs9mz/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpfilvs9mz/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "2ba75d812122f23e933197b26fed3d5673986a2ce0b6eeab916776fe0e1ff911"
+    ],
+    "deps/layer/tmpfilvs9mz/wheelhouse.txt": [
+      "testmetrics",
+      "static",
+      "625a3d927a9e46bbea27034a7daa0cf059779659926b7de02c8c6ec3b61ed68d"
+    ],
+    "deps/layer/tmpftVMkj/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpftVMkj/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpftVMkj/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpftVMkj/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpftVMkj/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpftVMkj/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpftVMkj/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpftVMkj/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpftVMkj/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpftVMkj/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpftVMkj/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpftVMkj/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpftVMkj/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpftVMkj/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpftVMkj/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpj5o8r7pd/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpj5o8r7pd/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpj5o8r7pd/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpj5o8r7pd/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpj5o8r7pd/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpj5o8r7pd/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpj5o8r7pd/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpj5o8r7pd/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpj5o8r7pd/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpj5o8r7pd/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpnsVs30/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpnsVs30/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpnsVs30/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpnsVs30/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpnsVs30/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpnsVs30/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpnsVs30/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpnsVs30/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpnsVs30/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpnsVs30/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpnsVs30/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpnsVs30/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpnsVs30/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpnsVs30/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpnsVs30/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/tmpt3ymsgo8/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpt3ymsgo8/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/tmpt3ymsgo8/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/tmpt3ymsgo8/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/tmpt3ymsgo8/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/tmpt3ymsgo8/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/tmpt3ymsgo8/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/tmpt3ymsgo8/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/tmpt3ymsgo8/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/tmpt3ymsgo8/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "deps/layer/vnfproxy/README.md": [
+      "testmetrics",
+      "static",
+      "84c9a4232bd1ff8672b5633d329349533dbb3d9c64b2f0ca13ffafd7a3add55b"
+    ],
+    "deps/layer/vnfproxy/actions.yaml": [
+      "testmetrics",
+      "static",
+      "58c73ec5db20980d153bbe68cc164977677810fe8bd4ced1d249d9a75a3d436e"
+    ],
+    "deps/layer/vnfproxy/actions/reboot": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/vnfproxy/actions/restart": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/vnfproxy/actions/start": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/vnfproxy/actions/stop": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/vnfproxy/actions/upgrade": [
+      "testmetrics",
+      "static",
+      "afc0df4409fb6eb7b7e6595490913c1efe329b393d4860ae226d8aaccc01fcf2"
+    ],
+    "deps/layer/vnfproxy/config.yaml": [
+      "testmetrics",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "deps/layer/vnfproxy/hooks/collect-metrics": [
+      "testmetrics",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "deps/layer/vnfproxy/icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "deps/layer/vnfproxy/layer.yaml": [
+      "testmetrics",
+      "static",
+      "ae35c37b29ca5ea04b943f756215081b5d2f2bf08c7ff8716a4d2a0e6fe17aa1"
+    ],
+    "deps/layer/vnfproxy/metadata.yaml": [
+      "testmetrics",
+      "static",
+      "338e81c6da9523dbe8f87d0fb57592423da53c15b98727c20ec531783e1697ba"
+    ],
+    "deps/layer/vnfproxy/reactive/vnfproxy.py": [
+      "testmetrics",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "deps/layer/vnfproxy/tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "deps/layer/vnfproxy/tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "32dccf698d07a61c23ed35073b30ee5d11278595c4bc45dae1194efab65ef626"
+    ],
+    "get-pip.py": [
+      "testmetrics",
+      "static",
+      "94c006f560a46105c907fa4485d16fb61308696af4bb6c29da1b9ad06380e8fa"
+    ],
+    "hooks/collect-metrics": [
+      "layer:vnfproxy",
+      "static",
+      "6b8e6016f80e401650b07301dc30cdc3d2928aa5f2532a8a92a55b906fa9ef19"
+    ],
+    "hooks/config-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/hook.template": [
+      "layer:basic",
+      "static",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/install": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-elected": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-settings-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/post-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/pre-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/start": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/stop": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/update-status": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/upgrade-charm": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "icon.svg": [
+      "testmetrics",
+      "static",
+      "085f367baa9c4ec724561b6e0d5d167c14c4295d6311b719a57729a17ac025c7"
+    ],
+    "layer.yaml": [
+      "testmetrics",
+      "dynamic",
+      "4d19a474d867448c15cc3a33bb3f98bba95b7f7f2d1ec01fc24ef8b80410a4ea"
+    ],
+    "lib/charms/layer/__init__.py": [
+      "layer:basic",
+      "static",
+      "dfe0d26c6bf409767de6e2546bc648f150e1b396243619bad3aa0553ab7e0e6f"
+    ],
+    "lib/charms/layer/basic.py": [
+      "layer:basic",
+      "static",
+      "ec4e6b7f9d6892ab74b3541337d1dc1d244ffb2155771841cc9480839f03d4c0"
+    ],
+    "lib/charms/layer/execd.py": [
+      "layer:basic",
+      "static",
+      "fda8bd491032db1db8ddaf4e99e7cc878c6fb5432efe1f91cadb5b34765d076d"
+    ],
+    "lib/charms/layer/options.py": [
+      "layer:options",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "lib/charms/sshproxy.py": [
+      "layer:sshproxy",
+      "static",
+      "d2060cbb756e094f44329bd0a404d47222af304aa75c508001ce0465a3c05974"
+    ],
+    "metadata.yaml": [
+      "testmetrics",
+      "dynamic",
+      "481617f0e46d237b0af017e8fc393c0633ad82e2b4b615d7ab30f6b96b869ea5"
+    ],
+    "metrics.yaml": [
+      "testmetrics",
+      "static",
+      "6bfc4c50a3f06eb9cf8aecda20416dd587b9ff7e1875ac6dbc9cc64711e16dfb"
+    ],
+    "reactive/__init__.py": [
+      "layer:basic",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "reactive/sshproxy.py": [
+      "layer:sshproxy",
+      "static",
+      "2a47918df20f5d110b156bd9422ece72a6d54317e6167fef596c76c34bbe745f"
+    ],
+    "reactive/testmetrics.py": [
+      "testmetrics",
+      "static",
+      "f024e64ce9620e546ce502a50058c587969575aecc63ea9ae17cc92c6e307bbd"
+    ],
+    "reactive/vnfproxy.py": [
+      "layer:vnfproxy",
+      "static",
+      "8e4101a72f02832e5c233b731981ff483675be608321b8eb9743d605b3f7d77a"
+    ],
+    "requirements.txt": [
+      "layer:basic",
+      "static",
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ],
+    "tests/00-setup": [
+      "testmetrics",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "tests/10-deploy": [
+      "testmetrics",
+      "static",
+      "7c0324d4f93bd293e607f4d561805f00b2a791e97b3cc7fe8c36637b1cc81fe3"
+    ],
+    "tox.ini": [
+      "layer:basic",
+      "static",
+      "0350315801b7fc2bd38a1f43a7e31d40d5a3bcfe5f6c8dac2bdf293833bc6d21"
+    ],
+    "wheelhouse/Jinja2-2.10.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"
+    ],
+    "wheelhouse/MarkupSafe-1.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
+    ],
+    "wheelhouse/PyYAML-3.13.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
+    ],
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ],
+    "wheelhouse/charmhelpers-0.19.3.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "b555058f2474e9df2a5d013d321f029a7aedd87e48a0d77b5dd6947deeece1de"
+    ],
+    "wheelhouse/charms.reactive-1.1.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "ce86a2273d070478160a236e2dfb9f68a0ea9b79923c65b2b17692b1d73b63b3"
+    ],
+    "wheelhouse/ecdsa-0.13.tar.gz": [
+      "layer:sshproxy",
+      "dynamic",
+      "64cf1ee26d1cde3c73c6d7d107f835fed7c6a2904aef9eac223d57ad800c43fa"
+    ],
+    "wheelhouse/netaddr-0.7.19.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    ],
+    "wheelhouse/paramiko-1.16.3.tar.gz": [
+      "layer:sshproxy",
+      "dynamic",
+      "97d932fdb4fec9aadf6bea368123f3ee15b92199f92eb62666370c7fed62d072"
+    ],
+    "wheelhouse/pip-8.1.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "4d24b03ffa67638a3fa931c09fd9e0273ffa904e95ebebe7d4b1a54c93d7b732"
+    ],
+    "wheelhouse/pyaml-17.12.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "66623c52f34d83a2c0fc963e08e8b9d0c13d88404e3b43b1852ef71eda19afa3"
+    ],
+    "wheelhouse/pycrypto-2.6.1.tar.gz": [
+      "layer:sshproxy",
+      "dynamic",
+      "f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c"
+    ],
+    "wheelhouse/setuptools-39.0.1.zip": [
+      "layer:basic",
+      "dynamic",
+      "bec7badf0f60e7fc8153fac47836edc41b74e5d541d7692e614e635720d6a7c7"
+    ],
+    "wheelhouse/setuptools_scm-1.17.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "70a4cf5584e966ae92f54a764e6437af992ba42ac4bca7eb37cc5d02b98ec40a"
+    ],
+    "wheelhouse/six-1.11.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+    ]
+  }
+}

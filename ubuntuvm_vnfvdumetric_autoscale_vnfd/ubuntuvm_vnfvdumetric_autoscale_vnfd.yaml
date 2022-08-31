@@ -1,0 +1,138 @@
+vnfd:vnfd-catalog:
+  vnfd:
+  - id: ubuntuvm_vnfvdumetric_autoscale_vnf
+    name: ubuntuvm_vnfvdumetric_autoscale_vnf
+    short-name: ubuntuvm_vnfvdumetric_autoscale_vnf
+    description: Ubuntu VM with metrics and cpu-based autoscaling
+    connection-point:
+    - name: vdu1_mgmt
+      type: VPORT
+    - name: vdu2_mgmt
+      type: VPORT
+    internal-vld:
+    - id: internal
+      internal-connection-point:
+      - id-ref: vdu1_internal
+      - id-ref: vdu2_internal
+      name: internal
+      short-name: internal
+      type: ELAN
+    mgmt-interface:
+      cp: vdu1_mgmt
+    vdu:
+    - cloud-init-file: cloud_init
+      count: '1'
+      description: ubuntuvdu1
+      id: ubuntuvdu1
+      image: ubuntu
+      interface:
+      - external-connection-point-ref: vdu1_mgmt
+        mgmt-interface: true
+        name: vdu1_eth0
+        position: '1'
+        type: EXTERNAL
+        virtual-interface:
+          type: VIRTIO
+      - internal-connection-point-ref: vdu1_internal
+        name: vdu1_eth1
+        position: '2'
+        type: INTERNAL
+        virtual-interface:
+          type: VIRTIO
+      internal-connection-point:
+      - id: vdu1_internal
+        name: vdu1_internal
+        short-name: vdu1_internal
+        type: VPORT
+      name: ubuntuvdu1
+      vdu-configuration:
+        initial-config-primitive:
+        - name: config
+          parameter:
+          - name: ssh-hostname
+            value: <rw_mgmt_ip>
+          - name: ssh-username
+            value: ubuntu
+          - name: ssh-password
+            value: osm2018
+          seq: '1'
+        juju:
+          charm: testmetrics
+          proxy: true
+        metrics:
+          - name: users
+          - name: load
+          - name: load_pct
+      vm-flavor:
+        memory-mb: '2048'
+        storage-gb: '10'
+        vcpu-count: '1'
+    - cloud-init-file: cloud_init
+      count: '1'
+      description: ubuntuvdu2
+      id: ubuntuvdu2
+      image: ubuntu
+      interface:
+      - external-connection-point-ref: vdu2_mgmt
+        mgmt-interface: true
+        name: vdu2_eth0
+        position: '1'
+        type: EXTERNAL
+        virtual-interface:
+          type: VIRTIO
+      - internal-connection-point-ref: vdu2_internal
+        name: vdu2_eth1
+        position: '2'
+        type: INTERNAL
+        virtual-interface:
+          type: VIRTIO
+      internal-connection-point:
+      - id: vdu2_internal
+        name: vdu2_internal
+        short-name: vdu2_internal
+        type: VPORT
+      name: ubuntuvdu2
+      vm-flavor:
+        memory-mb: '2048'
+        storage-gb: '10'
+        vcpu-count: '1'
+    vendor: Whitestack
+    version: '2.0'
+    scaling-group-descriptor:
+    -   name: "ubuntuvdu_autoscale"
+        min-instance-count: 0
+        max-instance-count: 3
+        scaling-policy:
+        -   name: "ubuntuvdu_load_pct_above_threshold"
+            scaling-type: "automatic"
+            threshold-time: 10
+            cooldown-time: 180
+            scaling-criteria:
+            -   name: "ubuntuvdu_load_pct_above_threshold"
+                scale-in-threshold: 20
+                scale-in-relational-operation: "LT"
+                scale-out-threshold: 80
+                scale-out-relational-operation: "GT"
+                vnf-monitoring-param-ref: "ubuntuvdu_load_pct"
+        vdu:
+        -   vdu-id-ref: ubuntuvdu1
+            count: 1    
+    monitoring-param:
+    -   id: "ubuntuvdu_users"
+        name: "ubuntuvdu_users"
+        aggregation-type: AVERAGE
+        vdu-metric:
+          vdu-ref: "ubuntuvdu1"
+          vdu-metric-name-ref: "users"
+    -   id: "ubuntuvdu_load"
+        name: "ubuntuvdu_load"
+        aggregation-type: AVERAGE
+        vdu-metric:
+          vdu-ref: "ubuntuvdu1"
+          vdu-metric-name-ref: "load"
+    -   id: "ubuntuvdu_load_pct"
+        name: "ubuntuvdu_load_pct"
+        aggregation-type: AVERAGE
+        vdu-metric:
+          vdu-ref: "ubuntuvdu1"
+          vdu-metric-name-ref: "load_pct"
