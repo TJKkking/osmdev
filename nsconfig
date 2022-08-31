@@ -1,0 +1,19 @@
+{
+vld:
+[
+{
+name: tjkdev_nsd_vld0,
+vim-network-name: public
+}
+]
+}
+
+{
+vld:
+[
+{
+name: mgmtnet,
+vim-network-name: public
+}
+]
+}
