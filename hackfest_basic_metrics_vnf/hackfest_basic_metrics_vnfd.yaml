@@ -45,18 +45,7 @@ vnfd:
   - id: ubuntu18.04
     image: ubuntu18.04
     name: ubuntu18.04
-  - id: ubuntu18.04-aws
-    name: ubuntu18.04-aws
-    image: ubuntu/images/hvm-ssd/ubuntu-artful-17.10-amd64-server-20180509
-    vim-type: aws
-  - id: ubuntu18.04-azure
-    name: ubuntu18.04-azure
-    image: Canonical:UbuntuServer:18.04-LTS:latest
-    vim-type: azure
-  - id: ubuntu18.04-gcp
-    name: ubuntu18.04-gcp
-    image: ubuntu-os-cloud:image-family:ubuntu-1804-lts
-    vim-type: gcp
+
   vdu:
   - cloud-init-file: cloud-config
     id: hackfest_basic_metrics-VM
@@ -81,10 +70,7 @@ vnfd:
       performance-metric: packets_received
     name: hackfest_basic_metrics-VM
     sw-image-desc: ubuntu18.04
-    alternative-sw-image-desc:
-    - ubuntu18.04-aws
-    - ubuntu18.04-azure
-    - ubuntu18.04-gcp
+
     virtual-compute-desc: hackfest_basic_metrics-VM-compute
     virtual-storage-desc:
     - hackfest_basic_metrics-VM-storage

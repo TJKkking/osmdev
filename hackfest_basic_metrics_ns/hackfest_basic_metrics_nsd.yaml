@@ -17,5 +17,6 @@ nsd:
     virtual-link-desc:
     - id: mgmtnet
       mgmt-network: true
+      vim-network-name: public
     vnfd-id:
     - hackfest_basic_metrics-vnf
