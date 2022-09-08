@@ -17,7 +17,6 @@ vnfd:
       num-virtual-cpu: 1
     virtual-memory:
       size: 1.0
-
   sw-image-desc:
   - id: ubuntu18.04
     name: ubuntu18.04

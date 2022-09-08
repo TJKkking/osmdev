@@ -1,3 +1,3 @@
 4dbca63ec6f9bc3b68c20f90ac602bdc	tjkdev_charm_ns/tjkdev_charm_nsd.yaml
-9650c2fe677bbe4ef1796a190f30c987	tjkdev_charm_ns/README.md
+78bb1cd8f6f640abc6532f7b48a9cdf9	tjkdev_charm_ns/README.md
 bc681c5a4c3cdc09c013df2d2239f3d2	tjkdev_charm_ns/icons/osm.png
